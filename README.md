@@ -1,6 +1,6 @@
-# Python send mail use gmail \n
+# Python send mail use gmail
 
-Use: Getting the command line input arguments. \n
+Use: Getting the command line input arguments.
 
 { from_to = sys.argv[1]
 subject = sys.argv[2]
@@ -29,6 +29,7 @@ from_to = 'null'
 - Call with command line
 
 Default: sentmail.py null null null
+
 Custom : sentmail.py "sangnv@osp.com.vn" "Hey! Hello boy handsome" "See you again"
 
 ___END___
