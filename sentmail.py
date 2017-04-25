@@ -56,8 +56,8 @@ def main():
    
    
 if __name__ == '__main__':	
-try:
-   main()
-   print 'Email sent!'
-except:  
-   print 'Something went wrong...'   
+   try:
+       main()
+       print 'Email sent!'
+   except:  
+       print 'Something went wrong...'   
