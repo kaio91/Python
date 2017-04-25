@@ -53,7 +53,9 @@ def main():
        body = body
    
    sentmail(from_to, subject, body)
-	
+   
+   
+if __name__ == '__main__':	
 try:
    main()
    print 'Email sent!'
