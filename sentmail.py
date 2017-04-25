@@ -10,7 +10,7 @@ import os
 import sys
 
 from_user = "sangnv@osp.com.vn"
-from_user_pass = "pass of you"
+from_user_pass = "pass"
 
 def sentmail(to, subject, text, attach=None):
    msg = MIMEMultipart()
@@ -37,20 +37,17 @@ def main():
    subject = sys.argv[2]
    body = sys.argv[3]
 
-   from_to = 'null'
-   if from_to:
+   if from_to == "null":
        from_to = "sangnv@osp.com.vn"
    else:
        from_to = from_to
 
-   subject = 'null'
-   if subject:
+   if subject == "null":
        subject = "Hey! Hello boy handsome"
    else:
        subject = subject
    
-   body = 'null'
-   if body:
+   if body == "null":
        body = "I Love You"
    else:
        body = body
