@@ -10,19 +10,19 @@ body = sys.argv[3] }
 
 from_to = 'null'
    if from_to:
-       from_to = "sangnv@osp.com.vn "
+       from_to = "admin@sangnv.net "
    else:
        from_to = from_to
 
    subject = 'null'
    if subject:
-       subject = "Hey! Hello boy handsome"
+       subject = "Hey! Hello boy"
    else:
        subject = subject
    
    body = 'null'
    if body:
-       body = "I Love You"
+       body = "Welcom"
    else:
        body = body
 
@@ -30,6 +30,6 @@ from_to = 'null'
 
 Default: sentmail.py null null null
 
-Custom : sentmail.py "sangnv@osp.com.vn" "Hey! Hello boy handsome" "See you again"
+Custom : sentmail.py "admin@sangnv.net" "Hey! Hello boy" "See you again"
 
 ___END___
