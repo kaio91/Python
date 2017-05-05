@@ -30,7 +30,7 @@ telnet()
          STATUS=$?
 
          if [ ${STATUS} == 0 ]; then
-             python sentmail.py null "${CURTIME} : host ${ip} - port ${PORT} close" "${CURTIME} : host ${ip} - port ${PORT} $
+             python sentmail.py null "${CURTIME} : host ${ip} - port ${PORT} close" "${CURTIME} : host ${ip} - port ${PORT} close"
          else
              echo "${CURTIME} : host ${ip} - port ${PORT} open"
          fi
@@ -45,7 +45,7 @@ main()
         ping #call function ping()
     else
         ping
-	telnet
+        telnet
     fi
 }
 
