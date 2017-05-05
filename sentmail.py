@@ -9,7 +9,7 @@ from email import Encoders
 import os
 import sys
 
-from_user = "sangnv@osp.com.vn"
+from_user = "sangnv@gmail.com"
 from_user_pass = "pass"
 
 def sentmail(to, subject, text, attach=None):
@@ -38,17 +38,17 @@ def main():
    body = sys.argv[3]
 
    if from_to == "null":
-       from_to = "sangnv@osp.com.vn"
+       from_to = "sangnv@gmail.com"
    else:
        from_to = from_to
 
    if subject == "null":
-       subject = "Hey! Hello boy handsome"
+       subject = "Hey! Hello boy"
    else:
        subject = subject
    
    if body == "null":
-       body = "I Love You"
+       body = "Welcom"
    else:
        body = body
    
