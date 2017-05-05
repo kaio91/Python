@@ -34,21 +34,6 @@ telnet()
          else
              echo "${CURTIME} : host ${ip} - port ${PORT} open"
          fi
-   done
-}
-
-telnet()
-{
-    export IFS=","
-    for ip in $RANGEIP; do
-         nmap -PN -p ${PORT} --open -oG - ${ip} | wc -l  > /dev/null
-         STATUS=$?
-
-         if [ ${STATUS} == 0 ]; then
-             python sentmail.py null "${CURTIME} : host ${ip} - port ${PORT} close" "${CURTIME} : host ${ip} - port ${PORT} $
-         else
-             echo "${CURTIME} : host ${ip} - port ${PORT} open"
-         fi
 
     done
 }
